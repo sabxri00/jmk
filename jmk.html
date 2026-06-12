@@ -1,0 +1,379 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>JMK - Janam Munetra Kalagam</title>
+
+<style>
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:'Segoe UI',sans-serif;
+}
+
+html{
+    scroll-behavior:smooth;
+}
+
+body{
+    background:#111;
+    color:white;
+}
+
+/* HERO SECTION */
+.hero{
+    height:100vh;
+    background:
+    linear-gradient(rgba(0,0,0,0.75),rgba(0,0,0,0.75)),
+    url("jmk-flag.jpg");
+    background-size:cover;
+    background-position:center;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    text-align:center;
+}
+
+.hero-content h1{
+    font-size:90px;
+    letter-spacing:5px;
+}
+
+.hero-content h2{
+    font-size:35px;
+    margin-top:10px;
+}
+
+.hero-content p{
+    margin-top:10px;
+    font-size:20px;
+}
+
+.btn{
+    display:inline-block;
+    margin-top:25px;
+    padding:14px 30px;
+    background:white;
+    color:black;
+    text-decoration:none;
+    border-radius:30px;
+    font-weight:bold;
+}
+
+.btn:hover{
+    background:#c70039;
+    color:white;
+}
+
+/* NAVBAR */
+nav{
+    position:sticky;
+    top:0;
+    background:#000;
+    z-index:1000;
+    padding:15px;
+    text-align:center;
+}
+
+nav a{
+    color:white;
+    text-decoration:none;
+    margin:0 15px;
+    font-weight:bold;
+}
+
+nav a:hover{
+    color:#c70039;
+}
+
+/* SECTIONS */
+section{
+    padding:80px 10%;
+}
+
+.section-title{
+    text-align:center;
+    font-size:40px;
+    margin-bottom:30px;
+    color:#c70039;
+}
+
+/* ABOUT */
+.about{
+    text-align:center;
+    line-height:1.8;
+}
+
+/* LEADERS */
+.leader-grid{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+    gap:25px;
+}
+
+.card{
+    background:#1b1b1b;
+    border-radius:15px;
+    overflow:hidden;
+    transition:.3s;
+    text-align:center;
+}
+
+.card:hover{
+    transform:translateY(-8px);
+}
+
+.card img{
+    width:100%;
+    height:280px;
+    object-fit:cover;
+}
+
+.card h3{
+    margin-top:15px;
+}
+
+.card p{
+    color:#ccc;
+    padding-bottom:20px;
+}
+
+/* MISSION */
+.mission-box{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+    gap:20px;
+}
+
+.mission-item{
+    background:#1b1b1b;
+    padding:25px;
+    border-radius:12px;
+    text-align:center;
+}
+
+/* JOIN */
+form{
+    max-width:600px;
+    margin:auto;
+}
+
+input,textarea{
+    width:100%;
+    padding:15px;
+    margin:10px 0;
+    border:none;
+    border-radius:8px;
+}
+
+button{
+    width:100%;
+    padding:15px;
+    background:#c70039;
+    color:white;
+    border:none;
+    border-radius:8px;
+    cursor:pointer;
+    font-size:18px;
+}
+
+button:hover{
+    background:#ff4d4d;
+}
+
+/* FOOTER */
+footer{
+    background:#000;
+    text-align:center;
+    padding:30px;
+}
+
+#message{
+    text-align:center;
+    margin-top:15px;
+    color:#00ff88;
+}
+
+@media(max-width:768px){
+
+.hero-content h1{
+    font-size:60px;
+}
+
+.hero-content h2{
+    font-size:25px;
+}
+
+.section-title{
+    font-size:30px;
+}
+}
+</style>
+</head>
+<body>
+
+<!-- HERO -->
+<section class="hero">
+<div class="hero-content">
+    <h1>JMK</h1>
+    <h2>Janam Munetra Kalagam</h2>
+    <p>ஜனம் முன்னேற்றக் கழகம்</p>
+    <p>People • Progress • Development</p>
+
+    <a href="#leaders" class="btn">Meet Our Leaders</a>
+</div>
+</section>
+
+<!-- NAVIGATION -->
+<nav>
+<a href="#about">About</a>
+<a href="#ideology">Ideology</a>
+<a href="#leaders">Leadership</a>
+<a href="#mission">Mission</a>
+<a href="#join">Join</a>
+</nav>
+
+<!-- ABOUT -->
+<section id="about">
+<h2 class="section-title">About JMK</h2>
+
+<div class="about">
+<p>
+Janam Munetra Kalagam (JMK) is a youth-oriented organization focused on
+education, social welfare, community development and leadership.
+</p>
+</div>
+</section>
+
+<!-- IDEOLOGY -->
+<section id="ideology">
+<h2 class="section-title">Our Ideology</h2>
+
+<div class="about">
+<p>
+Inspired by the leadership values of Vadachennai Chandra and Rajan,
+JMK believes in public service, development, education and people-first governance.
+</p>
+</div>
+</section>
+
+<!-- LEADERS -->
+<section id="leaders">
+<h2 class="section-title">Leadership Team</h2>
+
+<div class="leader-grid">
+
+<div class="card">
+<img src="pushparaj.jpeg" alt="">
+<h3>Pushparaj R</h3>
+<p>Leader</p>
+</div>
+
+<div class="card">
+<img src="sabari.jpg" alt="">
+<h3>Sabari Ananth N</h3>
+<p>Co-Leader</p>
+</div>
+
+<div class="card">
+<img src="pradeep.jpeg" alt="">
+<h3>Pradeep K</h3>
+<p>General Secretary</p>
+</div>
+
+<div class="card">
+<img src="deepikesh.jpeg" alt="">
+<h3>Deepikesh P</h3>
+<p>Education Secretary</p>
+</div>
+
+<div class="card">
+<img src="gurubaran.jpeg" alt="">
+<h3>Gurubaran</h3>
+<p>Policy Outreach Secretary</p>
+</div>
+
+<div class="card">
+<img src="priyan.jpeg" alt="">
+<h3>Priyan I</h3>
+<p>Food Safety Secretary</p>
+</div>
+
+<div class="card">
+<img src="karthi.jpeg" alt="">
+<h3>Karthi M</h3>
+<p>Transport Secretary</p>
+</div>
+
+</div>
+</section>
+
+<!-- MISSION -->
+<section id="mission">
+<h2 class="section-title">Our Mission</h2>
+
+<div class="mission-box">
+
+<div class="mission-item">
+<h3>Education</h3>
+<p>Encourage learning and educational opportunities.</p>
+</div>
+
+<div class="mission-item">
+<h3>Youth Empowerment</h3>
+<p>Build leadership among young people.</p>
+</div>
+
+<div class="mission-item">
+<h3>Community Welfare</h3>
+<p>Serve society through meaningful initiatives.</p>
+</div>
+
+</div>
+</section>
+
+<!-- JOIN -->
+<section id="join">
+<h2 class="section-title">Join JMK</h2>
+
+<form id="joinForm">
+<input type="text" id="name" placeholder="Full Name" required>
+
+<input type="email" placeholder="Email">
+
+<input type="tel" placeholder="Phone Number">
+
+<textarea rows="5" placeholder="Why do you want to join JMK?"></textarea>
+
+<button type="submit">Become a Member</button>
+
+<p id="message"></p>
+</form>
+</section>
+
+<!-- FOOTER -->
+<footer>
+<h3>JMK - Janam Munetra Kalagam</h3>
+<p>ஜனம் முன்னேற்றக் கழகம்</p>
+<br>
+<p>© 2026 All Rights Reserved</p>
+</footer>
+
+<script>
+document.getElementById("joinForm").addEventListener("submit",function(e){
+
+e.preventDefault();
+
+let name=document.getElementById("name").value;
+
+document.getElementById("message").innerHTML =
+"Welcome to JMK, " + name + "! Your membership request has been received.";
+
+this.reset();
+});
+</script>
+
+</body>
+</html>
